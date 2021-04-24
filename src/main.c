@@ -37,7 +37,7 @@ int main()
     printf("2- Octal\n");
     printf("3- Hexadecimal\n");
 
-    do
+    while(1)
     {
       scanf("%d", &opcao);
 
@@ -62,7 +62,8 @@ int main()
         printf("Opcao invalida porfavor digite novamente! [1,2,3]\n");
         continue;
       }
-    } while (opcao != 1 && opcao != 2 && opcao != 3);
+      break;
+    };
 
     printf("Deseja continuar executando o programa? [S/N]: ");
 
